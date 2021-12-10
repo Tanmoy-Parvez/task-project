@@ -1,0 +1,26 @@
+.search-field {
+    border: none;
+    border-radius: 50px;
+    padding: 5px;
+    outline: none;
+    width: 80%;
+  margin: 0 auto;
+
+  }
+
+  .search-box {
+    border: 1px solid #ED4C67;
+    width: 100%;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 50px;
+    border-right: none;
+    position: relative;
+  }
+
+  .buttonStyle{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+  }

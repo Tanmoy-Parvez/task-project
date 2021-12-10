@@ -1,0 +1,15 @@
+.nav-backgroud{
+    background-color: #264653;
+}
+.navigationLink a{
+    text-decoration: none;
+    margin-right: 20px;
+    color: white;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.navigationLink a:hover{
+   background-color: teal;
+    
+}
