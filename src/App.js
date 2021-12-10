@@ -2,12 +2,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './App.css';
 import Header from './Pages/Header/Header';
+import ProductDetails from './Pages/Home/DisplayProducts/ProductDetails';
 import Home from './Pages/Home/Home';
 import NotFound from './Pages/NotFound/NotFound';
+import Order from './Pages/Order/Order';
 
 function App() {
   return (
-    <div>
+    <div className="overflow-hidden">
       <BrowserRouter>
         <Header></Header>
         <Switch>
@@ -17,14 +19,11 @@ function App() {
           <Route path="/home">
             <Home />
           </Route>
-          <Route path="/products">
-
+          <Route path="/details/:id">
+            <ProductDetails />
           </Route>
-          <Route path="/aboutus">
-
-          </Route>
-          <Route path="/contactus">
-
+          <Route path="/order">
+            <Order />
           </Route>
           <Route path="*">
             <NotFound />
