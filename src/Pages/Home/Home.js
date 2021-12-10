@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from 'react';
+import { useSelector } from 'react-redux';
 import DisplayProducts from './DisplayProducts/DisplayProducts';
 import './Home.css'
 
 const Home = () => {
-    const [products, setProducts] = useState([]);
+    const [products, setProducts] = useState([])
+
+    const product = useSelector(state => state.allProducts.products)
 
     useEffect(() => {
-        fetch('./products.json')
-            .then(res => res.json())
-            .then(data => setProducts(data))
-
-    })
+        setProducts(product)
+    }, [])
 
     return (
         <div>
