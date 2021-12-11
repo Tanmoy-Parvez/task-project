@@ -1,6 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './App.css';
+import Cart from './Pages/Cart/Cart';
 import Header from './Pages/Header/Header';
 import ProductDetails from './Pages/Home/DisplayProducts/ProductDetails';
 import Home from './Pages/Home/Home';
@@ -24,6 +25,9 @@ function App() {
           </Route>
           <Route path="/order">
             <Order />
+          </Route>
+          <Route path="/cart">
+            <Cart></Cart>
           </Route>
           <Route path="*">
             <NotFound />
